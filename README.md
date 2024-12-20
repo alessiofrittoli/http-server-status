@@ -1,56 +1,39 @@
-# Node Module Starter 🛠️
+# HTTP Server Status 📣
 
-Version 0.2.0
+Version 0.1.0
 
-## Starter repository for developing node_modules
+## HTTP Server Status TypeScript enumerators and default messages
 
 ### Table of Contents
 
 - [Getting started](#getting-started)
-- [Development](#development)
-	- [ESLint](#eslint)
-	- [Jest](#jest)
 - [Contributing](#contributing)
 - [Security](#security)
 - [Credits](#made-with-)
 
 ---
 
-### Getting started (delete once cloned in your project)
-
-Run the following command to start using `node-module-starter` for your projects:
-
-```bash
-git clone git@github.com:alessiofrittoli/node-module-starter.git && git remote remove origin
-```
-
-install dependencies
-
-```bash
-pnpm i
-```
-
-Read the [Creating a repository from a template - GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template) for more in-detail informations about creating a new Repository from a template using GitHub web interface.
-
----
-
 ### Getting started (customize based on your project needs)
 
-Run the following command to start using `{package_name}` in your projects:
+Run the following command to start using `http-server-status` in your projects:
 
 ```bash
-npm i {package_name}
+npm i @alessiofrittoli/http-server-status
 ```
 
 or using `pnpm`
 
 ```bash
-pnpm i {package_name}
+pnpm i @alessiofrittoli/http-server-status
 ```
 
 ---
 
-### Development
+### Doc coming soon
+
+---
+
+<!-- ### Development
 
 #### Install depenendencies
 
@@ -88,21 +71,14 @@ Run all the defined test suites by running the following:
 # Run tests and watch file changes.
 pnpm test
 
-# Run tests and watch file changes with jest-environment-jsdom.
-pnpm test:jsdom
-
 # Run tests in a CI environment.
 pnpm test:ci
-
-# Run tests in a CI environment with jest-environment-jsdom.
-pnpm test:ci:jsdom
 ```
 
 You can eventually run specific suits like so:
 
 ```bash
 pnpm test:jest
-pnpm test:jest:jsdom
 ```
 
 ---
@@ -112,7 +88,7 @@ pnpm test:jest:jsdom
 Contributions are truly welcome!\
 Please refer to the [Contributing Doc](./CONTRIBUTING.md) for more information on how to start contributing to this project.
 
----
+--- -->
 
 ### Security
 
