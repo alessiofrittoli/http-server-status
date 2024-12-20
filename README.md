@@ -29,11 +29,11 @@ pnpm i @alessiofrittoli/http-server-status
 
 ---
 
-### Doc coming soon
+### API reference coming soon
 
 ---
 
-<!-- ### Development
+### Development
 
 #### Install depenendencies
 
@@ -79,6 +79,7 @@ You can eventually run specific suits like so:
 
 ```bash
 pnpm test:jest
+pnpm test:statuses
 ```
 
 ---
@@ -88,7 +89,7 @@ pnpm test:jest
 Contributions are truly welcome!\
 Please refer to the [Contributing Doc](./CONTRIBUTING.md) for more information on how to start contributing to this project.
 
---- -->
+---
 
 ### Security
 
