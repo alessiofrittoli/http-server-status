@@ -87,12 +87,10 @@ export const serverError: Record<ServerErrorResponse, string> = {
 }
 
 
-const message = {
+export const message: Record<ResponseStatus, string> = {
 	...information,
 	...success,
 	...redirection,
 	...clientError,
 	...serverError,
 }
-
-export default message
