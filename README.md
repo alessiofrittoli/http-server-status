@@ -2,6 +2,8 @@
 
 Version 0.1.0
 
+[![Coverage Status](https://coveralls.io/repos/github/alessiofrittoli/http-server-status/badge.svg)](https://coveralls.io/github/alessiofrittoli/http-server-status) [![Dependencies](https://img.shields.io/librariesio/release/npm/%40alessiofrittoli%2Fhttp-server-status)](https://libraries.io/npm/%40alessiofrittoli%2Fhttp-server-status)
+
 ## HTTP Server Status TypeScript enumerators and default messages
 
 ### Table of Contents
