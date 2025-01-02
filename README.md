@@ -13,7 +13,7 @@ Version 0.1.0
 
 ---
 
-### Getting started (customize based on your project needs)
+### Getting started
 
 Run the following command to start using `http-server-status` in your projects:
 
