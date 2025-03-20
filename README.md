@@ -1,8 +1,21 @@
 # HTTP Server Status 📣
 
-Version 1.0.0
+[![NPM Latest Version][version-badge]][npm-url] [![Coverage Status][coverage-badge]][coverage-url] [![Socket Status][socket-badge]][socket-url] [![NPM Monthly Downloads][downloads-badge]][npm-url] [![Dependencies][deps-badge]][deps-url]
 
-[![Coverage Status](https://coveralls.io/repos/github/alessiofrittoli/http-server-status/badge.svg)](https://coveralls.io/github/alessiofrittoli/http-server-status) [![Dependencies](https://img.shields.io/librariesio/release/npm/%40alessiofrittoli%2Fhttp-server-status)](https://libraries.io/npm/%40alessiofrittoli%2Fhttp-server-status)
+[![GitHub Sponsor][sponsor-badge]][sponsor-url]
+
+[version-badge]: https://img.shields.io/npm/v/%40alessiofrittoli%2Fhttp-server-status
+[npm-url]: https://npmjs.org/package/%40alessiofrittoli%2Fhttp-server-status
+[coverage-badge]: https://coveralls.io/repos/github/alessiofrittoli/http-server-status/badge.svg
+[coverage-url]: https://coveralls.io/github/alessiofrittoli/http-server-status
+[socket-badge]: https://socket.dev/api/badge/npm/package/@alessiofrittoli/http-server-status
+[socket-url]: https://socket.dev/npm/package/@alessiofrittoli/http-server-status/overview
+[downloads-badge]: https://img.shields.io/npm/dm/%40alessiofrittoli%2Fhttp-server-status.svg
+[deps-badge]: https://img.shields.io/librariesio/release/npm/%40alessiofrittoli%2Fhttp-server-status
+[deps-url]: https://libraries.io/npm/%40alessiofrittoli%2Fhttp-server-status
+
+[sponsor-badge]: https://img.shields.io/static/v1?label=Fund%20this%20package&message=%E2%9D%A4&logo=GitHub&color=%23DB61A2
+[sponsor-url]: https://github.com/sponsors/alessiofrittoli
 
 ## HTTP Server Status TypeScript enumerators and default messages
 
@@ -12,11 +25,16 @@ This module provides a comprehensive representation of HTTP status codes categor
 
 - [Getting started](#getting-started)
 - [API Reference](#api-reference)
-	- [Information Response Status](#informationresponse-enum)
-	- [Success Response Status](#successresponse-enum)
-	- [Redirection Response Status](#redirectionresponse-enum)
-	- [Client Error Response Status](#clienterrorresponse-enum)
-	- [Server Error Response Status](#servererrorresponse-enum)
+  - [Information Response Status](#informationresponse-enum)
+  - [Success Response Status](#successresponse-enum)
+  - [Redirection Response Status](#redirectionresponse-enum)
+  - [Client Error Response Status](#clienterrorresponse-enum)
+  - [Server Error Response Status](#servererrorresponse-enum)
+- [Development](#development)
+  - [Install depenendencies](#install-depenendencies)
+  - [Build the source code](#build-the-source-code)
+  - [ESLint](#eslint)
+  - [Jest](#jest)
 - [Contributing](#contributing)
 - [Security](#security)
 - [Credits](#made-with-)
@@ -186,9 +204,9 @@ or using `pnpm`
 pnpm i
 ```
 
-#### Build your source code
+#### Build the source code
 
-Run the following command to build code for distribution.
+Run the following command to test and build code for distribution.
 
 ```bash
 pnpm build
@@ -210,15 +228,23 @@ Run all the defined test suites by running the following:
 # Run tests and watch file changes.
 pnpm test:watch
 
+# Run tests and watch file changes with jest-environment-jsdom.
+pnpm test:jsdom
+
 # Run tests in a CI environment.
 pnpm test:ci
+
+# Run tests in a CI environment with jest-environment-jsdom.
+pnpm test:ci:jsdom
 ```
 
 You can eventually run specific suits like so:
 
+- See [`package.json`](./package.json) file scripts for more info.
+
 ```bash
 pnpm test:jest
-pnpm test:statuses
+pnpm test:jest:jsdom
 ```
 
 Run tests with coverage.
@@ -235,8 +261,13 @@ test:coverage:serve
 
 ### Contributing
 
-Contributions are truly welcome!\
+Contributions are truly welcome!
+
 Please refer to the [Contributing Doc](./CONTRIBUTING.md) for more information on how to start contributing to this project.
+
+Help keep this project up to date with [GitHub Sponsor][sponsor-url].
+
+[![GitHub Sponsor][sponsor-badge]][sponsor-url]
 
 ---
 
@@ -247,30 +278,30 @@ If you believe you have found a security vulnerability, we encourage you to **_r
 ### Made with ☕
 
 <table style='display:flex;gap:20px;'>
-	<tbody>
-		<tr>
-			<td>
-				<img src='https://avatars.githubusercontent.com/u/35973186' style='width:60px;border-radius:50%;object-fit:contain;'>
-			</td>
-			<td>
-				<table style='display:flex;gap:2px;flex-direction:column;'>
-					<tbody>
-						<tr>
-							<td>
-								<a href='https://github.com/alessiofrittoli' target='_blank' rel='noopener'>Alessio Frittoli</a>
-							</td>
-						</tr>
-						<tr>
-							<td>
-								<small>
-									<a href='https://alessiofrittoli.it' target='_blank' rel='noopener'>https://alessiofrittoli.it</a> |
-									<a href='mailto:info@alessiofrittoli.it' target='_blank' rel='noopener'>info@alessiofrittoli.it</a>
-								</small>
-							</td>
-						</tr>
-					</tbody>
-				</table>
-			</td>
-		</tr>
-	</tbody>
+  <tbody>
+    <tr>
+      <td>
+        <img alt="avatar" src='https://avatars.githubusercontent.com/u/35973186' style='width:60px;border-radius:50%;object-fit:contain;'>
+      </td>
+      <td>
+        <table style='display:flex;gap:2px;flex-direction:column;'>
+          <tbody>
+              <tr>
+                <td>
+                  <a href='https://github.com/alessiofrittoli' target='_blank' rel='noopener'>Alessio Frittoli</a>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <small>
+                    <a href='https://alessiofrittoli.it' target='_blank' rel='noopener'>https://alessiofrittoli.it</a> |
+                    <a href='mailto:info@alessiofrittoli.it' target='_blank' rel='noopener'>info@alessiofrittoli.it</a>
+                  </small>
+                </td>
+              </tr>
+          </tbody>
+        </table>
+      </td>
+    </tr>
+  </tbody>
 </table>
