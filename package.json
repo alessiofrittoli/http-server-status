@@ -47,10 +47,11 @@
 	"sideEffects": false,
 	"scripts": {
 		"//1a": "*********************************************************************",
-		"//1b": "*********************** BUILD - LINT - RELEASE **********************",
+		"//1b": "******************** DEV - BUILD - LINT - RELEASE *******************",
 		"//1c": "*********************************************************************",
-		"build": "pnpm lint && pnpm test:ci && tsup",
-		"build:watch": "tsup --watch",
+		"dev": "NODE_ENV=development tsup --watch",
+		"build:prod": "NODE_ENV=production tsup",
+		"build": "pnpm lint && pnpm test:ci && pnpm build:prod",
 		"lint": "eslint",
 		"release": "node scripts/publish.js --verbose --npm",
 		"//2a": "*********************************************************************",
@@ -63,7 +64,7 @@
 		"//3b": "************************ UNIT TESTS COVERAGE ************************",
 		"//3c": "*********************************************************************",
 		"test:coverage": "pnpm test:watch --coverage",
-		"test:ci:coverage": "pnpm test:ci --coverage",
+		"test:coverage:ci": "pnpm test:ci --coverage",
 		"test:serve-coverage": "http-server ./coverage/lcov-report --gzip true -p 0 -o --silent",
 		"test:coverage:serve": "concurrently --prefix none --kill-others \"pnpm test:coverage\" \"pnpm test:serve-coverage\""
 	},
